@@ -1,10 +1,10 @@
 # Topics and Methodologies Retrieval
 This repository collects the code necessary to retrieve topics and methodologies for each document in a collection.
-The topics are represented by NPs automatically extracted and ranked according to frequency, tf-idf and semantic similarity to the title's NPs.
+The topics are represented by NPs automatically extracted and ranked according to frequency, tf-idf and semantic similarity to the title's NPs .
 The methodologies are represented by NPs, selected by lexicon, mean-purpose relations and predicates.
 
 ## Pre-requisites
-The code relies on Python 3 and its libraries, mainly the Standford CoreNLP library, in the wrapper pycorenlp and NLTK library.
+The code relies on Python 3 and its libraries, mainly the Standford CoreNLP library, in the wrapper pycorenlp and Wordnet corpus from NLTK library.
 
 ## Running
 The code loads the corpus collection on disk (pickle files),
