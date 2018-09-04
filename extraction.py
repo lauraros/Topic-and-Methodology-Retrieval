@@ -12,7 +12,7 @@ from nltk.stem import WordNetLemmatizer
 from nltk.stem.snowball import SnowballStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-from get_categories_4_NLP_1 import get_nps_from_sent_no_clean, np_similarity
+from NLP import get_nps_from_sent_no_clean, np_similarity
 
 logging.basicConfig(filename='D:/Python/get_categories.log', level=logging.DEBUG) #need to change the path
 
