@@ -23,9 +23,9 @@ import time
 
 from nltk.stem.snowball import SnowballStemmer
 
-from get_categories_4_utils_1 import get_data
-from get_categories_4_NLP_1 import annotate, NPs_from_text
-from get_categories_4_new_extraction_1 import get_method, get_topic
+from utils import get_data
+from NLP import annotate, NPs_from_text
+from extraction import get_method, get_topic
 
 
 logging.basicConfig(filename='D:/Python/get_categories.log', level=logging.DEBUG)
