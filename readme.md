@@ -25,9 +25,9 @@ java -mx6g -cp "D:\Java\*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port
 
 
 Moreover, some variables need to be changed in the get_categories_4.py :
-    - directory and filename for the logfile 
-    - collection_directory : directory of corpus collection (requires pickle files, main function) 
-    - directory and filename for the 2 output text files (doc_stats  function)
+- directory and filename for the logfile,
+- collection_directory : directory of corpus collection (requires pickle files, main function), 
+- directory and filename for the 2 output text files (doc_stats  function).
     
 Finally, only the main script needs to be run from the command line:
 
