@@ -14,7 +14,7 @@ reported in 2 output text files.
 - topic-methodology-retrieval.py is the main script and manages the whole retrieval process,
 - utils.py manages the reading and writing of the data,
 - extraction.py manages the extraction rules,
-- NLP.py manages the annotation and the subtasks necessary for the extraction procedure.
+- nlp.py manages the annotation and the subtasks necessary for the extraction procedure.
 
 ## Running
 Before running the script, the server for the StanfordCoreNLP library needs to be called from the command prompt/terminal:
