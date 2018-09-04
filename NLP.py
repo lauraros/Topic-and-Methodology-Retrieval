@@ -31,7 +31,7 @@ stopwords= ['about', '-lrb-', '-rrb-', 'recent', 'every', 'whole', 'proposed', '
 def annotate(text):
     """Annotate the text with tokens, sentence split, POS tags and constituency and dependency parsing."""
     nlp = StanfordCoreNLP('http://localhost:9000')# depparse,natlog,openie
-    output = nlp.annotate(text, properties={'annotators': 'tokenize,ssplit,pos,parse', 'outputFormat': 'json'})#CORRECT
+    output = nlp.annotate(text, properties={'annotators': 'tokenize,ssplit,pos,parse', 'outputFormat': 'json'})
     #print('output' ,output)
     if type(output) is str:
         output = json.loads(output, strict=False)
@@ -126,9 +126,6 @@ def get_nps_from_sent_no_clean(sent):
     # print(nps)
     nps = [n for np in nps for n in np]
     or_sent = ' '.join([t['word'] for t in sent['tokens']])
-    #if 'peer review' in or_sent:
-    #   nps = ['peer review' if x == 'review' else x for x in nps]  # CORRECT and peer
-    # print(nps)
     return nps
 
 
@@ -180,7 +177,7 @@ def tagged_to_synset(word, tag):
     except:
         return None
 
-
+     
 def np_similarity(np1, np2):
     """Computes and return a semantic similarity measure between 2 phrases
                 according to hyperonomy/hyponomy relations in Wordnet."""
