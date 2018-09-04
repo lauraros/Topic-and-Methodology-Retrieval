@@ -24,7 +24,7 @@ import time
 from nltk.stem.snowball import SnowballStemmer
 
 from utils import get_data
-from NLP import annotate, NPs_from_text
+from nlp import annotate, NPs_from_text
 from extraction import get_method, get_topic
 
 
